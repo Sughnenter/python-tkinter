@@ -1,0 +1,26 @@
+weight_lbs = int(input('Enter your weighht in pounds(lbs) '))
+weight_kg = weight_lbs * 0.45
+print(weight_kg)
+from tkinter import *
+window = Tk()
+window.title("Converter App")
+window.geometry("800x600")
+window.config(bg="blue")
+myText = Label(window, text= "HEIGHT CONVERTER",fg="black",bg="blue",font=("Verdana"))
+CMLabel = Label(window,text="HEIGHT(CM)",fg="black",bg="blue",font=("Verdana"))
+Ratelabel = Label(window, text= "RATE",fg="black",bg="blue",font=("Verdana"))
+FTlabel = Label(window,text="HEIGHT(FT)",fg = "black",bg="blue",font=("Verdana"))
+#ENTRIES
+CMEntry = Entry(window,font=("Verdana",18),width=20)
+RateEntry = Entry(window,font=("verdana",18),width=20)
+FTEntry = Entry(window,font=("Verdana",18),width=20)
+#BUTTONS
+Convert = Button(window, text="CONVERT",font=("Tahoma",18))
+myText.pack(pady=5)
+CMLabel.pack(pady=5)
+CMEntry.pack()
+Ratelabel.pack(pady=5)
+RateEntry.pack()
+Convert.pack(pady=10)
+FTlabel.pack(pady=5)
+window.mainloop()
